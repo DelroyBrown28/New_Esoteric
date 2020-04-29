@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400&display=swap');
+
+body,
+html {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #e9e9e9;
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+    .header_contents_wrap {
+        position: relative;
+        width: 100%;
+    }
+
+    .main_title {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        font-weight: 100;
+        opacity: 0;
+
+    }
+
+    hr {
+        border: 0.7px solid black;
+        width: 0%;
+        opacity: 0;
+    }
+
+    .storyTellers_container {
+        position: relative;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .firstRow {
+        position: relative;
+        width: 100%;
+        height: 14%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .authors {
+        position: relative;
+        width: 20%;
+        font-size: 1.2em;
+        font-weight: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        transition: 0.3s;
+        cursor: pointer;
+        z-index: 1;
+
+    }
+
+    .alanWatts_background {
+        position: absolute;
+        background-color: rgb(61, 61, 61);
+        width: 20%;
+        height: 25px;
+        top: 5%;
+        opacity: 0;
+        left: 0;
+    }
+
+    .authors:hover {
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        background-color: rgb(61, 61, 61);
+
+    }
+
+    .authors:active {
+        background-color: transparent;
+    }
+
+}
